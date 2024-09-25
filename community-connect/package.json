@@ -6,5 +6,13 @@
   "devDependencies": {
     "jest": "^29.7.0",
     "supertest": "^7.0.0"
+  },
+  "name": "projects",
+  "private": true,
+  "workspaces": [
+    "community-connect"
+  ],
+  "scripts": {
+    "build": "cd community-connect && yarn install && yarn build"
   }
 }
