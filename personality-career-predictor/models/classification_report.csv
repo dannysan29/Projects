@@ -1,0 +1,9 @@
+,precision,recall,f1-score,support
+Analytical,1.0,1.0,1.0,1497.0
+Balanced,1.0,1.0,1.0,1726.0
+Creative,1.0,1.0,1.0,181.0
+Organizational,1.0,1.0,1.0,6.0
+Social,1.0,1.0,1.0,534.0
+accuracy,1.0,1.0,1.0,1.0
+macro avg,1.0,1.0,1.0,3944.0
+weighted avg,1.0,1.0,1.0,3944.0
