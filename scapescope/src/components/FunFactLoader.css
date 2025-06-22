@@ -1,0 +1,45 @@
+.fun-fact-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #010001;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.fun-fact-card {
+    background: #111;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    max-width: 600px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.fun-fact-image {
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+  }
+  
+  .fun-fact-text {
+    padding: 1.25rem;
+  }
+  
+  .fun-fact-text p {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+  }
+  
+  .learn-more {
+    color: #00bfff;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
