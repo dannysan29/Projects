@@ -1,0 +1,139 @@
+.dashboard-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 400px;
+    z-index: 999;
+    box-shadow: 0 0 15px rgba(0,255,255,0.2);
+}
+
+.toggle-dashboard {
+    width: 100%;
+    padding: 0.6rem;
+    background: #0077cc;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 12px 12px 0 0;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-dashboard:hover {
+    background: #005fa3;
+}
+
+.dashboard-content {
+    background-color: #111;
+    padding: 1rem;
+    border-radius: 0 0 12px 12px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.dashboard-card {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 255, 255, 0.1);
+}
+
+.dashboard-card h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 0.9rem;
+    color: #00bfff;
+    font-weight: 600;
+}
+
+.dashboard-value {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.dashboard-label {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #888;
+    font-style: italic;
+}
+
+.solar-events {
+    border-top: 1px solid #333;
+    padding-top: 1rem;
+}
+
+.solar-events h4 {
+    margin: 0 0 0.5rem 0;
+    color: #00bfff;
+    font-size: 0.9rem;
+}
+
+.events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.event-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background: #1a1a1a;
+    border-radius: 4px;
+    border-left: 3px solid #0077cc;
+}
+
+.event-type {
+    font-size: 0.8rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.event-date {
+    font-size: 0.7rem;
+    color: #888;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        position: relative;
+        width: 100%;
+        margin: 1rem 0;
+    }
+    
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .dashboard-content {
+        max-height: none;
+    }
+}
+
+/* Animation for loading states */
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.dashboard-value:contains("Loading") {
+    animation: pulse 1.5s ease-in-out infinite;
+} 

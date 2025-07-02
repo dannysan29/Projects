@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Chatbot from './components/Chatbot';
 import NewsFeed from './components/NewsFeed';
+import Dashboard from './components/Dashboard';
 
 const KEYWORDS = [
   "galaxy", "nebula", "black hole", "supernova", "telescope", "NASA", "orbit", "Milky Way",
@@ -86,10 +86,11 @@ function App() {
           </p>
         </div>
       ) : (
-        <p className="text-center text-gray-400 italic">🔭 Loading today’s space insight...</p>
+        <p className="text-center text-gray-400 italic">🔭 Loading today's space insight...</p>
       )}
+      
+      <Dashboard />
       <NewsFeed />
-      <Chatbot />
     </div>
   );
 }
