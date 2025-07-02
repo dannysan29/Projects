@@ -135,14 +135,6 @@ npm run build
 # Upload dist/ folder to your hosting provider
 ```
 
-## 🔮 Future Enhancements
-
-- [ ] Light/dark theme toggle
-- [ ] Framer Motion animations
-- [ ] Offline mode with cached data
-- [ ] Social sharing features
-- [ ] Space event notifications
-
 ## 🤝 Contributing
 
 1. Fork the repository
